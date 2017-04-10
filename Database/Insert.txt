@@ -1,0 +1,49 @@
+  ?<?php get_header(); ?>
+  <body>
+<?php
+$servername = "localhost";
+$username = "id1303442_wp_55bd5273f841065b84fdc8ac423cc9fe";
+$password = "c7aeae161ac5e9e0a5a0a5ebdd183bdff0a2b5c9";
+$dbname = "id1303442_wp_55bd5273f841065b84fdc8ac423cc9fe";
+
+// Create connection
+//$conn = new mysqli($servername, $username, $password, $dbname);
+$conn=mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+//if ($conn->connect_error) {
+//    die("Connection failed: " . $conn->connect_error);
+//}
+/*
+if($conn)
+{
+	echo "Successfully";
+} 
+else
+{
+	echo "Failed !";
+}
+*/
+//
+$name=$_GET['name'];
+$id=$_GET['id'];
+$sql = "INSERT INTO `ahmed2` (`name`, `id`) VALUES ('".$name."', '".$id."');";
+$data=mysqli_query($conn,$sql);
+if($data)
+{
+	echo "Success";
+}
+else
+{
+	echo "Failed!";
+}
+/*
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+*/
+//$conn->close();
+//
+?>
+	<?php get_footer(); ?>
