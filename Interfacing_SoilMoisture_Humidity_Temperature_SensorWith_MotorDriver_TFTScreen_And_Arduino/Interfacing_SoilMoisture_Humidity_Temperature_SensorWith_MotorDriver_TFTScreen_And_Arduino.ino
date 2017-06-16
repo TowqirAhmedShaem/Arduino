@@ -2,7 +2,7 @@
    Author: Towqir Ahmed Shaem
    Department : Applied Physics, Electronics and Communication Engineering,CU
    Company : Stellarbd, CDA Avenue, Chittagong, 4000, Bangladesh
-   Postion : Sub Junior Embedded System Software Engineer
+   Postion : Sub Junior Embedded System  Engineer
    Mobile : 01521401124
    Email : tpwqirahmedshaem@gmail.com
    Git : https://gitlab.com/Shaem
